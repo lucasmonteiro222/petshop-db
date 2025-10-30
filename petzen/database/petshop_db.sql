@@ -25,3 +25,13 @@ CREATE TABLE agendamentos (
         ON DELETE SET NULL
         ON UPDATE CASCADE
 ) ENGINE=InnoDB;
+
+
+CREATE TABLE usuarios (
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    nivel_acesso ENUM('admin', 'funcionario', 'cliente'),
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
