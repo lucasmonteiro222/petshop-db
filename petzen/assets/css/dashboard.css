@@ -1,0 +1,117 @@
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  margin-left: 240px; 
+  padding: 100px 50px 40px 50px; 
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+}
+
+
+.dashboard-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+
+.dashboard-card {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+
+.dashboard-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.dashboard-actions button {
+  width: 80%;
+  background-color: #ff8a3f;
+  border: none;
+  color: #fff;
+  padding: 14px 0;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard-actions button:hover {
+  background-color: #e67a35;
+}
+
+
+.agenda-dia {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.agenda-dia li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: #555;
+  padding: 6px 0;
+}
+
+.agenda-dia li i {
+  color: #6ec1b6;
+  font-size: 16px;
+}
+
+.agenda-vermais {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 992px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 100px 20px 30px 20px;
+  }
+}
